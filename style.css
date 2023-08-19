@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;600&family=Red+Hat+Text&family=Red+Hat+Mono&display=swap');
+
+:root {
+    --dark-color: rgb(57, 58, 58);
+    --light-color: rgb(81, 83, 83);
+    --lighter-color: rgb(111,113,113);
+}
+
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    font-family: 'Red Hat Text';
+    display: inline;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Red Hat Display';
+}
+
+header {
+    background-color: var(--dark-color);
+    color: white;
+    padding: 1.5em;
+    text-align: center;
+    display: block;
+
+    & * {
+        display: block;
+    }
+
+    & h1 {
+        font-size: 3em;
+        font-weight: 600;
+    }
+
+    & h2 {
+        font-size: 2.5em;
+        font-weight: 300;
+    }
+
+}
+
+nav {
+    background-color: var(--light-color);
+    text-align: center;
+    display: block;
+    & a {
+        color: white;
+        text-decoration: none;
+        display: inline-block;
+        padding: 1em;
+
+        &:hover {
+            background-color: var(--dark-color);
+        }
+    }
+}
+
+main {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: block;
+    padding: 0.5em;
+}
+
+footer {
+    background-color: var(--dark-color);
+    display: flex;
+    align-items: center; /* Vertical center alignment */
+    justify-content: center;
+    min-height: 10em;
+    & .footer-content {
+        color: white;
+        padding: 2em;
+
+        & p {
+            display: block;
+            text-align: center;
+            margin: 1em;
+        }
+    }
+}
+
+.btn {
+    background-color: var(--dark-color);
+    color: white;
+    display: inline-block;
+    padding: 1em;
+    border-radius: 0.7em;
+    text-decoration: none;
+
+    &:hover {
+        background-color: var(--light-color);
+    }
+
+    + .inverse {
+        background-color: white;
+        border: 1px solid var(--dark-color);
+        color: var(--dark-color);
+
+        &:hover {
+            background-color: var(--light-color);
+            color: white;
+        }
+    }
+}
