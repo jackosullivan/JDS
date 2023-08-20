@@ -42,17 +42,19 @@ header {
 }
 
 nav {
-    background-color: var(--light-color);
     text-align: center;
     display: block;
+    & .nav-collection {
+        display: inline-block;
+    }
     & a {
-        color: white;
+        color: var(--dark-color);
         text-decoration: none;
         display: inline-block;
         padding: 1em;
 
         &:hover {
-            background-color: var(--dark-color);
+            text-decoration: underline;
         }
     }
 }
