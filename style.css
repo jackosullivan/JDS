@@ -44,6 +44,8 @@ header {
 nav {
     text-align: center;
     display: block;
+    border-bottom: 1px solid var(--dark-color);
+    margin-bottom: 1em;
     & .nav-collection {
         display: inline-block;
     }
@@ -73,6 +75,7 @@ footer {
     align-items: center; /* Vertical center alignment */
     justify-content: center;
     min-height: 10em;
+    margin-top: 1em;
     & .footer-content {
         color: white;
         padding: 2em;
